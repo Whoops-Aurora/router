@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { ProductComponent } from './product/product.component';
 import { HomeproductComponent } from './homeproduct/homeproduct.component';
 import { InventoryComponent } from './inventory/inventory.component';
+import { ItemService } from './item.service';
+
 
 @NgModule({
   declarations: [
@@ -18,7 +20,7 @@ import { InventoryComponent } from './inventory/inventory.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [ItemService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
